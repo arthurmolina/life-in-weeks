@@ -18,7 +18,7 @@ i18n
       useSuspense: true,
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
+      loadPath: '/life-in-weeks/locales/{{lng}}/translation.json',
     },
     detection: {
       order: ['querystring', 'navigator', 'localStorage'],
