@@ -1,0 +1,136 @@
+{
+  "app": {
+    "title": "Life in Weeks",
+    "titleWithName": "Life of {{name}} in Weeks",
+    "tagline": "Visualize your life, one week at a time"
+  },
+  "form": {
+    "name": "Name",
+    "namePlaceholder": "Your name (optional)",
+    "birthdate": "Birthdate",
+    "gender": {
+      "label": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "other": "Other"
+    },
+    "country": "Country",
+    "years": "years",
+    "lifeExpectancy": "Life Expectancy",
+    "lifeExpectancyHelp": "Leave empty to use country average",
+    "lifeStages": {
+      "title": "Life Stages",
+      "show": "Show Life Stages",
+      "hide": "Hide Life Stages",
+      "school": "School",
+      "college": "College",
+      "career": "Career",
+      "retirement": "Retirement",
+      "startAge": "Start Age",
+      "endAge": "End Age",
+      "duration": "Duration (years)"
+    },
+    "share": "Share",
+    "export": "Export",
+    "update": "Update"
+  },
+  "grid": {
+    "enterBirthdate": "Enter your birthdate to visualize your life in weeks",
+    "legend": {
+      "title": "Legend",
+      "past": "Weeks Lived",
+      "current": "Current Week",
+      "future": "Weeks Remaining",
+      "marked": "Marked Events",
+      "lifeStages": "Life Stages",
+      "clickToMark": "Click any week to mark important events"
+    },
+    "toggles": {
+      "showLegend": "🗺️ Show Legend",
+      "hideLegend": "🗺️ Hide Legend",
+      "showPanel": "📋 Show Panel",
+      "hidePanel": "📋 Hide Panel"
+    },
+    "ageDisplay": "You are {{years}} years and {{weeks}} weeks old",
+    "ageDisplayYearsOnly": "You are {{years}} years old",
+    "weekTooltip": "Week {{number}} • {{dateRange}} • Age {{age}}",
+    "weeksRemaining": "{{weeks}} weeks remaining"
+  },
+  "header": {
+    "toggleTheme": "Toggle Theme",
+    "changeLanguage": "Change Language",
+    "about": "About"
+  },
+  "about": {
+    "title": "About Life in Weeks",
+    "description": "Life in Weeks helps you visualize your entire life as a grid of weeks, making time tangible and encouraging you to make the most of every moment."
+  },
+  "footer": {
+    "credits": "Made with ❤️ by Arthur Molina in Fortaleza, Ceará, Brazil"
+  },
+  "share": {
+    "title": "Share Your Life in Weeks",
+    "defaultText": "Check out my Life in Weeks visualization!",
+    "withAge": "I'm {{years}} years old with {{weeksLeft}} weeks remaining. Visualize your life:",
+    "copySuccess": "Link copied to clipboard!",
+    "copyError": "Failed to copy link",
+    "shareLink": "Share Link",
+    "copy": "Copy",
+    "copied": "✓ Copied",
+    "shareViaSocial": "Share via Social Media",
+    "showQR": "Show QR Code",
+    "hideQR": "Hide QR Code"
+  },
+  "export": {
+    "title": "Export Your Life Grid",
+    "format": "Format",
+    "pageSize": "Page Size",
+    "orientation": "Orientation",
+    "landscape": "Landscape",
+    "portrait": "Portrait",
+    "download": "Download",
+    "exporting": "Exporting...",
+    "success": "Export successful!",
+    "error": "Export failed. Please try again."
+  },
+  "common": {
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "delete": "Delete"
+  },
+  "weekDetail": {
+    "title": "Week {{number}}",
+    "age": "Age: {{age}} years",
+    "color": "Color",
+    "label": "Label",
+    "labelPlaceholder": "e.g., Graduation, Wedding, etc.",
+    "note": "Note (optional)",
+    "notePlaceholder": "Add a note about this week..."
+  },
+  "seo": {
+    "description": "Visualize your life one week at a time. An interactive calendar showing your entire life as a grid of weeks, helping you appreciate the finite nature of time.",
+    "descriptionWithAge": "I'm {{years}} years and {{weeks}} weeks old. Visualizing my life one week at a time with this interactive calendar.",
+    "yearsOld": "years old",
+    "keywords": "life in weeks, life calendar, time visualization, life expectancy, week grid, life stages, mortality, time management, life planning"
+  },
+  "stats": {
+    "title": "Statistics",
+    "percentageLived": "% Lived",
+    "weeksLived": "Weeks Lived",
+    "weeksRemaining": "Weeks Left",
+    "currentAge": "Current Age",
+    "weeksPerStage": "Weeks per Life Stage",
+    "markedWeeks": "Marked Weeks"
+  },
+  "keyboard": {
+    "title": "Keyboard Shortcuts",
+    "legend": "Toggle Legend",
+    "panel": "Toggle Panel",
+    "fullscreen": "Toggle Fullscreen",
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out",
+    "resetZoom": "Reset Zoom",
+    "help": "Show Shortcuts"
+  }
+}

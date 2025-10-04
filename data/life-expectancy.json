@@ -1,0 +1,55 @@
+{
+  "countries": [
+    {
+      "code": "US",
+      "name": { "en": "United States", "pt": "Estados Unidos" },
+      "lifeExpectancy": { "male": 76.3, "female": 81.3, "overall": 78.9 }
+    },
+    {
+      "code": "BR",
+      "name": { "en": "Brazil", "pt": "Brasil" },
+      "lifeExpectancy": { "male": 72.8, "female": 79.9, "overall": 76.3 }
+    },
+    {
+      "code": "GB",
+      "name": { "en": "United Kingdom", "pt": "Reino Unido" },
+      "lifeExpectancy": { "male": 79.4, "female": 83.1, "overall": 81.3 }
+    },
+    {
+      "code": "JP",
+      "name": { "en": "Japan", "pt": "Japão" },
+      "lifeExpectancy": { "male": 81.5, "female": 87.6, "overall": 84.7 }
+    },
+    {
+      "code": "CN",
+      "name": { "en": "China", "pt": "China" },
+      "lifeExpectancy": { "male": 75.0, "female": 79.9, "overall": 77.5 }
+    },
+    {
+      "code": "IN",
+      "name": { "en": "India", "pt": "Índia" },
+      "lifeExpectancy": { "male": 68.8, "female": 71.5, "overall": 70.2 }
+    },
+    {
+      "code": "DE",
+      "name": { "en": "Germany", "pt": "Alemanha" },
+      "lifeExpectancy": { "male": 78.9, "female": 83.6, "overall": 81.3 }
+    },
+    {
+      "code": "FR",
+      "name": { "en": "France", "pt": "França" },
+      "lifeExpectancy": { "male": 79.8, "female": 85.7, "overall": 82.7 }
+    },
+    {
+      "code": "CA",
+      "name": { "en": "Canada", "pt": "Canadá" },
+      "lifeExpectancy": { "male": 80.2, "female": 84.3, "overall": 82.3 }
+    },
+    {
+      "code": "AU",
+      "name": { "en": "Australia", "pt": "Austrália" },
+      "lifeExpectancy": { "male": 81.2, "female": 85.3, "overall": 83.3 }
+    }
+  ],
+  "lastUpdated": "2025-01-01"
+}
