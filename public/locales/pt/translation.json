@@ -48,6 +48,8 @@
     "toggles": {
       "showLegend": "🗺️ Mostrar Legenda",
       "hideLegend": "🗺️ Ocultar Legenda",
+      "showStatistics": "📊 Mostrar Estatísticas",
+      "hideStatistics": "📊 Ocultar Estatísticas",
       "showPanel": "📋 Mostrar Painel",
       "hidePanel": "📋 Ocultar Painel"
     },
@@ -126,6 +128,7 @@
   "keyboard": {
     "title": "Atalhos de Teclado",
     "legend": "Alternar Legenda",
+    "statistics": "Alternar Estatísticas",
     "panel": "Alternar Painel",
     "fullscreen": "Alternar Tela Cheia",
     "zoomIn": "Aumentar Zoom",

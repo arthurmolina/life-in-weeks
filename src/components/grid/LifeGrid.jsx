@@ -21,8 +21,10 @@ export default function LifeGrid() {
     showLifeStages,
     showLegend,
     showForm,
+    showStatistics,
     toggleLegend,
     toggleForm,
+    toggleStatistics,
   } = useAppState();
   const [selectedWeek, setSelectedWeek] = useState(null);
   const [showAboutModal, setShowAboutModal] = useState(false);
@@ -58,6 +60,7 @@ export default function LifeGrid() {
   // Keyboard shortcuts
   useKeyboardShortcuts([
     { key: 'l', action: toggleLegend },
+    { key: 's', action: toggleStatistics },
     { key: 'p', action: toggleForm },
     { key: 'f', action: toggleFullscreen },
     { key: '+', action: zoomIn },
@@ -83,6 +86,15 @@ export default function LifeGrid() {
             title={showLegend ? t('grid.toggles.hideLegend') : t('grid.toggles.showLegend')}
           >
             🗺️
+          </button>
+
+          {/* Statistics Toggle */}
+          <button
+            onClick={toggleStatistics}
+            className="w-10 h-10 flex items-center justify-center text-xl text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
+            title={showStatistics ? t('grid.toggles.hideStatistics') : t('grid.toggles.showStatistics')}
+          >
+            📊
           </button>
 
           {/* Panel Toggle */}
@@ -141,7 +153,7 @@ export default function LifeGrid() {
       ) : (
         <>
           {/* Statistics Panel */}
-          <StatisticsPanel />
+          {showStatistics && <StatisticsPanel />}
 
           {/* Wrapper for export with ID for html2canvas */}
           <div ref={gridContainerRef} id="life-grid-export" className="space-y-4 relative mt-4">
@@ -233,6 +245,10 @@ export default function LifeGrid() {
               <div className="flex justify-between">
                 <span className="text-gray-600 dark:text-gray-400">L</span>
                 <span className="text-gray-900 dark:text-white">{t('keyboard.legend')}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-600 dark:text-gray-400">S</span>
+                <span className="text-gray-900 dark:text-white">{t('keyboard.statistics')}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600 dark:text-gray-400">P</span>

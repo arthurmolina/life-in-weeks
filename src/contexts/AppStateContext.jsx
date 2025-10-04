@@ -39,6 +39,7 @@ const initialState = {
   selectedWeeks: new Set(),
   showForm: true,
   showLegend: true,
+  showStatistics: true,
   countries: [],
 };
 
@@ -102,6 +103,7 @@ export function AppStateProvider({ children }) {
     state.showLifeStages,
     state.showForm,
     state.showLegend,
+    state.showStatistics,
   ]);
 
   const setUserData = (data) => {
@@ -147,6 +149,10 @@ export function AppStateProvider({ children }) {
     setState((prev) => ({ ...prev, showLegend: !prev.showLegend }));
   };
 
+  const toggleStatistics = () => {
+    setState((prev) => ({ ...prev, showStatistics: !prev.showStatistics }));
+  };
+
   const setCountries = (countries) => {
     setState((prev) => ({ ...prev, countries }));
   };
@@ -176,6 +182,7 @@ export function AppStateProvider({ children }) {
     selectWeeks,
     toggleForm,
     toggleLegend,
+    toggleStatistics,
     setCountries,
   };
 

@@ -48,6 +48,8 @@
     "toggles": {
       "showLegend": "🗺️ Show Legend",
       "hideLegend": "🗺️ Hide Legend",
+      "showStatistics": "📊 Show Statistics",
+      "hideStatistics": "📊 Hide Statistics",
       "showPanel": "📋 Show Panel",
       "hidePanel": "📋 Hide Panel"
     },
@@ -126,6 +128,7 @@
   "keyboard": {
     "title": "Keyboard Shortcuts",
     "legend": "Toggle Legend",
+    "statistics": "Toggle Statistics",
     "panel": "Toggle Panel",
     "fullscreen": "Toggle Fullscreen",
     "zoomIn": "Zoom In",
