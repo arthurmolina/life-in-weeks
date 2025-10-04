@@ -14,16 +14,20 @@ export default function HomePage() {
       <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
         {/* GitHub Ribbon */}
         <a
+          className="github-fork-ribbon left-top"
           href="https://github.com/arthurmolina/life-in-weeks"
+          data-ribbon="Fork me on GitHub"
+          title="Fork me on GitHub"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed top-0 left-0 z-50"
-          aria-label="View source on GitHub"
         >
-          <div className="absolute top-12 -left-12 w-40 bg-black text-white text-center py-1 transform -rotate-45 shadow-lg hover:bg-gray-800 transition-colors">
-            <span className="text-xs font-bold tracking-wider">GitHub</span>
-          </div>
+          Fork me on GitHub
         </a>
+        <style>{`
+          .github-fork-ribbon:before {
+            background-color: #c00;
+          }
+        `}</style>
         <main className="flex-1 container mx-auto px-4 py-8">
           <div className={`flex flex-col lg:flex-row gap-8 ${!showForm ? 'justify-center' : ''}`}>
             {/* Form Sidebar */}
