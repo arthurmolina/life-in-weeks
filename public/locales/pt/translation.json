@@ -1,0 +1,136 @@
+{
+  "app": {
+    "title": "Vida em Semanas",
+    "titleWithName": "Vida de {{name}} em Semanas",
+    "tagline": "Visualize sua vida, uma semana por vez"
+  },
+  "form": {
+    "name": "Nome",
+    "namePlaceholder": "Seu nome (opcional)",
+    "birthdate": "Data de Nascimento",
+    "gender": {
+      "label": "Gênero",
+      "male": "Masculino",
+      "female": "Feminino",
+      "other": "Outro"
+    },
+    "country": "País",
+    "years": "anos",
+    "lifeExpectancy": "Expectativa de Vida",
+    "lifeExpectancyHelp": "Deixe vazio para usar a média do país",
+    "lifeStages": {
+      "title": "Fases da Vida",
+      "show": "Mostrar Fases da Vida",
+      "hide": "Ocultar Fases da Vida",
+      "school": "Escola",
+      "college": "Faculdade",
+      "career": "Carreira",
+      "retirement": "Aposentadoria",
+      "startAge": "Idade Inicial",
+      "endAge": "Idade Final",
+      "duration": "Duração (anos)"
+    },
+    "share": "Compartilhar",
+    "export": "Exportar",
+    "update": "Atualizar"
+  },
+  "grid": {
+    "enterBirthdate": "Digite sua data de nascimento para visualizar sua vida em semanas",
+    "legend": {
+      "title": "Legenda",
+      "past": "Semanas Vividas",
+      "current": "Semana Atual",
+      "future": "Semanas Restantes",
+      "marked": "Eventos Marcados",
+      "lifeStages": "Fases da Vida",
+      "clickToMark": "Clique em qualquer semana para marcar eventos importantes"
+    },
+    "toggles": {
+      "showLegend": "🗺️ Mostrar Legenda",
+      "hideLegend": "🗺️ Ocultar Legenda",
+      "showPanel": "📋 Mostrar Painel",
+      "hidePanel": "📋 Ocultar Painel"
+    },
+    "ageDisplay": "Você tem {{years}} anos e {{weeks}} semanas",
+    "ageDisplayYearsOnly": "Você tem {{years}} anos",
+    "weekTooltip": "Semana {{number}} • {{dateRange}} • Idade {{age}}",
+    "weeksRemaining": "{{weeks}} semanas restantes"
+  },
+  "header": {
+    "toggleTheme": "Alternar Tema",
+    "changeLanguage": "Mudar Idioma",
+    "about": "Sobre"
+  },
+  "about": {
+    "title": "Sobre Vida em Semanas",
+    "description": "Vida em Semanas ajuda você a visualizar sua vida inteira como uma grade de semanas, tornando o tempo tangível e incentivando você a aproveitar ao máximo cada momento."
+  },
+  "footer": {
+    "credits": "Feito com ❤️ por Arthur Molina em Fortaleza, Ceará, Brazil"
+  },
+  "share": {
+    "title": "Compartilhe sua Vida em Semanas",
+    "defaultText": "Confira minha visualização de Vida em Semanas!",
+    "withAge": "Tenho {{years}} anos com {{weeksLeft}} semanas restantes. Visualize sua vida:",
+    "copySuccess": "Link copiado para a área de transferência!",
+    "copyError": "Falha ao copiar link",
+    "shareLink": "Link de Compartilhamento",
+    "copy": "Copiar",
+    "copied": "✓ Copiado",
+    "shareViaSocial": "Compartilhar via Redes Sociais",
+    "showQR": "Mostrar QR Code",
+    "hideQR": "Ocultar QR Code"
+  },
+  "export": {
+    "title": "Exportar seu Grid de Vida",
+    "format": "Formato",
+    "pageSize": "Tamanho da Página",
+    "orientation": "Orientação",
+    "landscape": "Paisagem",
+    "portrait": "Retrato",
+    "download": "Baixar",
+    "exporting": "Exportando...",
+    "success": "Exportação bem-sucedida!",
+    "error": "Falha na exportação. Tente novamente."
+  },
+  "common": {
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "save": "Salvar",
+    "delete": "Excluir"
+  },
+  "weekDetail": {
+    "title": "Semana {{number}}",
+    "age": "Idade: {{age}} anos",
+    "color": "Cor",
+    "label": "Etiqueta",
+    "labelPlaceholder": "ex: Formatura, Casamento, etc.",
+    "note": "Nota (opcional)",
+    "notePlaceholder": "Adicione uma nota sobre esta semana..."
+  },
+  "seo": {
+    "description": "Visualize sua vida uma semana por vez. Um calendário interativo mostrando sua vida inteira como uma grade de semanas, ajudando você a apreciar a natureza finita do tempo.",
+    "descriptionWithAge": "Tenho {{years}} anos e {{weeks}} semanas. Visualizando minha vida uma semana por vez com este calendário interativo.",
+    "yearsOld": "anos",
+    "keywords": "vida em semanas, calendário de vida, visualização de tempo, expectativa de vida, grade de semanas, fases da vida, mortalidade, gestão de tempo, planejamento de vida"
+  },
+  "stats": {
+    "title": "Estatísticas",
+    "percentageLived": "% Vivido",
+    "weeksLived": "Semanas Vividas",
+    "weeksRemaining": "Semanas Restantes",
+    "currentAge": "Idade Atual",
+    "weeksPerStage": "Semanas por Fase",
+    "markedWeeks": "Semanas Marcadas"
+  },
+  "keyboard": {
+    "title": "Atalhos de Teclado",
+    "legend": "Alternar Legenda",
+    "panel": "Alternar Painel",
+    "fullscreen": "Alternar Tela Cheia",
+    "zoomIn": "Aumentar Zoom",
+    "zoomOut": "Diminuir Zoom",
+    "resetZoom": "Resetar Zoom",
+    "help": "Mostrar Atalhos"
+  }
+}
