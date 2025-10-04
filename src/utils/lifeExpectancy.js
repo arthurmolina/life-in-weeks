@@ -59,7 +59,7 @@ export function calculateLifeExpectancy({
  */
 export async function loadLifeExpectancyData() {
   try {
-    const response = await fetch('/data/life-expectancy.json');
+    const response = await fetch('/life-in-weeks/data/life-expectancy.json');
     if (!response.ok) {
       throw new Error('Failed to load life expectancy data');
     }
