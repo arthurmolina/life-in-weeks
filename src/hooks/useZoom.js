@@ -1,11 +1,38 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 
 const MIN_ZOOM = 0.5;
 const MAX_ZOOM = 3;
 const ZOOM_STEP = 0.2;
 
 export function useZoom(initialZoom = 1) {
-  const [zoom, setZoom] = useState(initialZoom);
+  // Read initial zoom from URL params
+  const getInitialZoom = () => {
+    const params = new URLSearchParams(window.location.search);
+    const zoomParam = params.get('zoom');
+    if (zoomParam) {
+      const parsed = parseFloat(zoomParam);
+      if (!isNaN(parsed) && parsed >= MIN_ZOOM && parsed <= MAX_ZOOM) {
+        return parsed;
+      }
+    }
+    return initialZoom;
+  };
+
+  const [zoom, setZoom] = useState(getInitialZoom);
+
+  // Update URL params when zoom changes
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (zoom !== 1) {
+      params.set('zoom', zoom.toFixed(1));
+    } else {
+      params.delete('zoom');
+    }
+    const newUrl = params.toString()
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname;
+    window.history.replaceState({}, '', newUrl);
+  }, [zoom]);
 
   const zoomIn = useCallback(() => {
     setZoom((prev) => Math.min(prev + ZOOM_STEP, MAX_ZOOM));

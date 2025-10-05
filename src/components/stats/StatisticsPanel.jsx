@@ -85,9 +85,25 @@ export default function StatisticsPanel() {
 
   return (
     <div className="w-full p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-        {t('stats.title')}
-      </h3>
+      {/* Life Progress Bar */}
+      <div className="mb-6">
+        <div className="flex justify-between items-center mb-2">
+          <span className="text-xs font-medium text-gray-600 dark:text-gray-400">
+            {t('stats.lifeProgress')}
+          </span>
+          <span className="text-xs font-bold text-blue-600 dark:text-blue-400">
+            {percentageLived}%
+          </span>
+        </div>
+        <div className="w-full h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden relative">
+          <div
+            className="h-full bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 transition-all duration-500 ease-out relative"
+            style={{ width: `${percentageLived}%` }}
+          >
+            <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+          </div>
+        </div>
+      </div>
 
       {/* Main Stats Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">

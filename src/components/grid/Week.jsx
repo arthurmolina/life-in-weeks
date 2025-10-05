@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { getWeekStatus, isWeekInStage, getWeekDateRange } from '../../utils';
 import Tooltip from '../common/Tooltip';
 
-function Week({ weekNumber, currentWeekNumber, marking, lifeStages, showLifeStages, onClick, birthdate, isLastWeek }) {
+function Week({ weekNumber, currentWeekNumber, marking, lifeStages, showLifeStages, onClick, birthdate, isLastWeek, zoom = 1, baseSize = 8 }) {
   const { i18n } = useTranslation();
   const status = getWeekStatus(weekNumber, currentWeekNumber);
 
@@ -64,8 +64,15 @@ function Week({ weekNumber, currentWeekNumber, marking, lifeStages, showLifeStag
     }
   }
 
-  // Use inline style for custom marking colors
-  const style = marking ? { backgroundColor: marking.color } : {};
+  // Calculate size based on zoom
+  const size = `${baseSize * zoom}px`;
+
+  // Use inline style for custom marking colors and size
+  const style = {
+    width: size,
+    height: size,
+    ...(marking ? { backgroundColor: marking.color } : {}),
+  };
 
   // Build tooltip content
   let tooltipContent = null;
@@ -114,7 +121,8 @@ function Week({ weekNumber, currentWeekNumber, marking, lifeStages, showLifeStag
     return (
       <Tooltip content={tooltipContent}>
         <div
-          className="w-2 h-2 rounded-sm cursor-pointer hover:scale-150 transition-transform flex items-center justify-center bg-gray-300 dark:bg-gray-600"
+          className="rounded-sm cursor-pointer hover:scale-150 transition-transform flex items-center justify-center bg-gray-300 dark:bg-gray-600"
+          style={{ width: size, height: size }}
           onClick={() => onClick?.(weekNumber)}
         >
           <span className="text-[7px] font-bold leading-none text-gray-600 dark:text-gray-300">+</span>
@@ -126,7 +134,7 @@ function Week({ weekNumber, currentWeekNumber, marking, lifeStages, showLifeStag
   return (
     <Tooltip content={tooltipContent}>
       <div
-        className={`w-2 h-2 rounded-sm cursor-pointer hover:scale-150 transition-transform ${!marking ? bgClass : ''} ${stageClass} ${animationClass}`}
+        className={`rounded-sm cursor-pointer hover:scale-150 transition-transform ${!marking ? bgClass : ''} ${stageClass} ${animationClass}`}
         style={style}
         onClick={() => onClick?.(weekNumber)}
       />

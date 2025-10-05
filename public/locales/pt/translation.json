@@ -118,6 +118,7 @@
   },
   "stats": {
     "title": "Estatísticas",
+    "lifeProgress": "Progresso de Vida",
     "percentageLived": "% Vivido",
     "weeksLived": "Semanas Vividas",
     "weeksRemaining": "Semanas Restantes",

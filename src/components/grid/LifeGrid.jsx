@@ -196,27 +196,21 @@ export default function LifeGrid() {
             </div>
 
             <div className="w-full overflow-auto p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 animate-gridFadeIn">
-              <div className="inline-block min-w-full" style={{ transform: `scale(${zoom})`, transformOrigin: 'top left' }}>
-                <div
-                  className="grid gap-1"
-                  style={{
-                    gridTemplateColumns: `repeat(${WEEKS_PER_YEAR}, minmax(0, 1fr))`,
-                  }}
-                >
-                  {weeks.map((weekNumber) => (
-                    <Week
-                      key={weekNumber}
-                      weekNumber={weekNumber}
-                      currentWeekNumber={currentWeekNumber}
-                      marking={markedWeeks.get(weekNumber)}
-                      lifeStages={lifeStages}
-                      showLifeStages={showLifeStages}
-                      onClick={handleWeekClick}
-                      birthdate={birthdate}
-                      isLastWeek={weekNumber === totalWeeks - 1}
-                    />
-                  ))}
-                </div>
+              <div className="flex flex-wrap gap-1">
+                {weeks.map((weekNumber) => (
+                  <Week
+                    key={weekNumber}
+                    weekNumber={weekNumber}
+                    currentWeekNumber={currentWeekNumber}
+                    marking={markedWeeks.get(weekNumber)}
+                    lifeStages={lifeStages}
+                    showLifeStages={showLifeStages}
+                    onClick={handleWeekClick}
+                    birthdate={birthdate}
+                    isLastWeek={weekNumber === totalWeeks - 1}
+                    zoom={zoom}
+                  />
+                ))}
               </div>
             </div>
           </div>
