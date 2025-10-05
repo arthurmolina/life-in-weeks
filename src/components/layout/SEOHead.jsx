@@ -29,7 +29,7 @@ export default function SEOHead() {
       <title>{title}</title>
       <meta name="title" content={title} />
       <meta name="description" content={description} />
-      <link rel="canonical" href={currentURL} />
+      <link rel="canonical" href={baseURL} />
 
       {/* Language Alternates */}
       <link rel="alternate" hrefLang="en" href={`${baseURL}?l=en`} />
