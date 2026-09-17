@@ -48,6 +48,8 @@
     "toggles": {
       "showLegend": "🗺️ Show Legend",
       "hideLegend": "🗺️ Hide Legend",
+      "showStatistics": "📊 Show Statistics",
+      "hideStatistics": "📊 Hide Statistics",
       "showPanel": "📋 Show Panel",
       "hidePanel": "📋 Hide Panel"
     },
@@ -88,6 +90,9 @@
     "orientation": "Orientation",
     "landscape": "Landscape",
     "portrait": "Portrait",
+    "colorMode": "Color Mode",
+    "color": "Color",
+    "blackWhite": "Black & White",
     "download": "Download",
     "exporting": "Exporting...",
     "success": "Export successful!",
@@ -116,6 +121,7 @@
   },
   "stats": {
     "title": "Statistics",
+    "lifeProgress": "Life Progress",
     "percentageLived": "% Lived",
     "weeksLived": "Weeks Lived",
     "weeksRemaining": "Weeks Left",
@@ -126,6 +132,7 @@
   "keyboard": {
     "title": "Keyboard Shortcuts",
     "legend": "Toggle Legend",
+    "statistics": "Toggle Statistics",
     "panel": "Toggle Panel",
     "fullscreen": "Toggle Fullscreen",
     "zoomIn": "Zoom In",

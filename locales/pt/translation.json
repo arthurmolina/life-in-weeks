@@ -48,6 +48,8 @@
     "toggles": {
       "showLegend": "🗺️ Mostrar Legenda",
       "hideLegend": "🗺️ Ocultar Legenda",
+      "showStatistics": "📊 Mostrar Estatísticas",
+      "hideStatistics": "📊 Ocultar Estatísticas",
       "showPanel": "📋 Mostrar Painel",
       "hidePanel": "📋 Ocultar Painel"
     },
@@ -88,6 +90,9 @@
     "orientation": "Orientação",
     "landscape": "Paisagem",
     "portrait": "Retrato",
+    "colorMode": "Modo de Cor",
+    "color": "Colorido",
+    "blackWhite": "Preto e Branco",
     "download": "Baixar",
     "exporting": "Exportando...",
     "success": "Exportação bem-sucedida!",
@@ -116,6 +121,7 @@
   },
   "stats": {
     "title": "Estatísticas",
+    "lifeProgress": "Progresso de Vida",
     "percentageLived": "% Vivido",
     "weeksLived": "Semanas Vividas",
     "weeksRemaining": "Semanas Restantes",
@@ -126,6 +132,7 @@
   "keyboard": {
     "title": "Atalhos de Teclado",
     "legend": "Alternar Legenda",
+    "statistics": "Alternar Estatísticas",
     "panel": "Alternar Painel",
     "fullscreen": "Alternar Tela Cheia",
     "zoomIn": "Aumentar Zoom",
